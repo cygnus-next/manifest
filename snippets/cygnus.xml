@@ -50,5 +50,68 @@
   <!-- Extra packages not included in the main manifest -->
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
   <project path="packages/apps/FlipFlap" name="android_packages_apps_FlipFlap" remote="lineage"/>
+  <!-- Remove LineageOS Apps-->
+
+  <remove-project groups="pdk-fs" name="LineageOS/android_packages_screensavers_Basic" path="packages/screensavers/Basic" />
+
+  <remove-project groups="pdk-fs" name="LineageOS/android_packages_screensavers_PhotoTable" path="packages/screensavers/PhotoTable" />
+
+  <remove-project groups="pdk-fs" name="LineageOS/android_packages_wallpapers_LivePicker" path="packages/wallpapers/LivePicker" />
+
+  <remove-project name="LineageOS/android_packages_apps_AudioFX" path="packages/apps/AudioFX" />
+
+  <remove-project name="LineageOS/android_packages_apps_Calendar" path="packages/apps/Calendar" />
+
+  <remove-project name="LineageOS/android_packages_apps_Camera2" path="packages/apps/Camera2" />
+
+  <remove-project name="LineageOS/android_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" />
+
+  <remove-project name="LineageOS/android_packages_apps_DeskClock" path="packages/apps/DeskClock" />
+
+  <remove-project name="LineageOS/android_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" />
+
+  <remove-project name="LineageOS/android_packages_apps_Exchange" path="packages/apps/Exchange" />
+
+  <remove-project name="LineageOS/android_packages_apps_Email" path="packages/apps/Email" />
+
+  <remove-project name="LineageOS/android_packages_apps_EmergencyInfo" path="packages/apps/EmergencyInfo" />
+
+  <remove-project name="LineageOS/android_packages_apps_FMRadio" path="packages/apps/FMRadio" />
+
+  <remove-project name="LineageOS/android_vendor_qcom_opensource_fm-commonsys" path="vendor/qcom/opensource_fm-commonsys" />
+
+  <remove-project name="LineageOS/android_packages_apps_Jelly" path="packages/apps/Jelly" />
+
+  <remove-project name="LineageOS/android_packages_apps_Nfc" path="packages/apps/Nfc" />
+
+  <remove-project name="LineageOS/android_packages_apps_TV" path="packages/apps/TV" />
+
+  <remove-project name="LineageOS/android_packages_apps_TvSettings" path="packages/apps/TvSettings" />
+
+  <remove-project name="LineageOS/android_packages_apps_ThemePicker" path="packages/apps/ThemePicker" />
+
+  <remove-project name="LineageOS/android_packages_apps_WallpaperPicker2" path="packages/apps/WallpaperPicker2" />
+
+  <remove-project name="LineageOS/android_packages_apps_Updater" path="packages/apps/Updater" />
+
+  <remove-project name="LineageOS/android_packages_apps_ManagedProvisioning" path="packages/apps/ManagedProvisioning" />
+
+  <remove-project name="LineageOS/android_packages_apps_Snap" path="packages/apps/Snap" />
+
+  <remove-project name="LineageOS/android_packages_apps_SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" />
+
+  <remove-project name="LineageOS/android_packages_providers_BookmarkProvider" path="packages/providers/BookmarkProvider" />
+
+  <remove-project name="LineageOS/android_packages_providers_PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" />
+
+  <remove-project name="LineageOS/android_packages_providers_TvProvider" path="packages/providers/TvProvider" />
+
+  <remove-project name="LineageOS/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" />
+
+  <remove-project groups="pdk-fs" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" />
+
+  <remove-project groups="pdk-fs" name="platform/packages/apps/Provision" path="packages/apps/Provision" />
+
+  <remove-project name="platform/packages/apps/UniversalMediaPlayer" path="packages/apps/UniversalMediaPlayer" />
 
 </manifest>
