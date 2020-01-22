@@ -62,8 +62,7 @@
 
   <remove-project name="LineageOS/android_packages_apps_Calendar" path="packages/apps/Calendar" />
 
-  <remove-project name="LineageOS/android_packages_apps_Camera2" path="packages/apps/Camera2" />
-
+  
   <remove-project name="LineageOS/android_packages_apps_CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" />
 
   <remove-project name="LineageOS/android_packages_apps_DeskClock" path="packages/apps/DeskClock" />
