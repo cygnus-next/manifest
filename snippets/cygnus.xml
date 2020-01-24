@@ -67,7 +67,7 @@
 
   <remove-project name="LineageOS/android_packages_apps_DeskClock" path="packages/apps/DeskClock" />
 
-  <remove-project name="LineageOS/android_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" />
+  
 
   <remove-project name="LineageOS/android_packages_apps_Exchange" path="packages/apps/Exchange" />
 
@@ -105,8 +105,7 @@
 
   <remove-project name="LineageOS/android_packages_providers_TvProvider" path="packages/providers/TvProvider" />
 
-  <remove-project name="LineageOS/android_packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" />
-
+  
   <remove-project groups="pdk-fs" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" />
 
   <remove-project groups="pdk-fs" name="platform/packages/apps/Provision" path="packages/apps/Provision" />
