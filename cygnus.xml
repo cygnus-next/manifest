@@ -101,6 +101,7 @@
         <project path="packages/services/Telephony" name="packages_services_Telephony" remote="cygnusnext" revision="caf-ten-merge"/>
         <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cygnusnext" revision="caf-ten-merge"/>    
         <project path="packages/apps/Trebuchet" name="packages_apps_Trebuchet" remote="cygnus"/>
+	<project path="packages/apps/Spaceship" name="packages_apps_Spaceship" remote="cygnusnext" revision="caf-ten" />
 
     <!-- Recovery -->
         <project path="bootable/recovery" name="bootable_recovery" remote="cygnus"/>
