@@ -70,7 +70,7 @@
         <project path="device/qcom/common" name="device_qcom_common" remote="cygnus"/>
         <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="cygnus"/>
         <project path="device/cygnus/sepolicy" name="device_cygnus_sepolicy" remote="cygnus"/>
-        <project path="device/qcom/sepolicy/legacy" name="LineageOS/android_device_qcom_sepolicy" remote="github"/>
+        <project path="device/qcom/sepolicy/legacy" name="LineageOS/android_device_qcom_sepolicy" remote="github" revision="lineage-17.1-legacy-um"/>
        
     <!-- External -->
         <project path="external/selinux" name="external_selinux" remote="cygnus"/>
