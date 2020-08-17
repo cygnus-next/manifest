@@ -20,7 +20,7 @@
             fetch="https://github.com/" />
 
     <!-- Build -->
-        <project path="build/make" name="build" remote="cygnus" >
+        <project path="build/make" name="build" remote="cygnusnext" >
     	    <copyfile src="core/root.mk" dest="Makefile" />
   	        <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
    	        <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -29,89 +29,89 @@
 	        <linkfile src="target" dest="build/target" />
   	        <linkfile src="tools" dest="build/tools" />
         </project>
-	    <project path="build/soong" name="build_soong" remote="cygnus" >
+	    <project path="build/soong" name="build_soong" remote="cygnusnext" >
  	        <linkfile src="root.bp" dest="Android.bp" />
 	        <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
         </project>
-        <project path="build/blueprint" name="build_blueprint" remote="cygnus"/>
+        <project path="build/blueprint" name="build_blueprint" remote="cygnusnext"/>
    
     <!-- Manifest -->
-   	    <project path="manifest" name="manifest" remote="cygnus"/>
+   	    <project path="manifest" name="manifest" remote="cygnusnext"/>
 	
 
     <!-- development -->
-        <project path="development" name="development" remote="cygnus"/>
+        <project path="development" name="development" remote="cygnusnext"/>
 
     <!-- art -->
-        <project path="art" name="art" remote="cygnus"/>
+        <project path="art" name="art" remote="cygnusnext"/>
    
     <!-- libcore -->
-        <project path="libcore" name="libcore" remote="cygnus"/>
+        <project path="libcore" name="libcore" remote="cygnusnext"/>
 
     <!-- Vendor -->
-        <project path="vendor/cygnus" name="vendor_cygnus"  remote="cygnus"/>
-        <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="cygnus"/>
-        <project path="vendor/qcom/opensource/core-utils" name="vendor_qcom-opensource_core-utils" remote="cygnus"/>
-        <project path="vendor/cygnus-overlays" name="vendor_cygnus-overlays" remote="cygnus"/>
-        <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="cygnus"/>
-        <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="cygnus"/>
-        <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="cygnus"/>
-        <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="cygnus" />
-        <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="cygnus"/>
-	<project path="vendor/prebuilts" name="vendor_prebuilts" remote="cygnus"/>
-	<project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="cygnus"/>
+        <project path="vendor/cygnus" name="vendor_cygnus"  remote="cygnusnext"/>
+        <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="cygnusnext"/>
+        <project path="vendor/qcom/opensource/core-utils" name="vendor_qcom-opensource_core-utils" remote="cygnusnext"/>
+        <project path="vendor/cygnus-overlays" name="vendor_cygnus-overlays" remote="cygnusnext"/>
+        <project path="vendor/codeaurora/commonsys/telephony" name="vendor_codeaurora_commonsys_telephony" remote="cygnusnext"/>
+        <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="cygnusnext"/>
+        <project path="vendor/qcom/opensource/commonsys/system/bt" name="vendor_qcom_opensource_commonsys_system_bt" remote="cygnusnext"/>
+        <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="cygnusnext" />
+        <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="cygnusnext"/>
+	<project path="vendor/prebuilts" name="vendor_prebuilts" remote="cygnusnext"/>
+	<project path="vendor/qcom/opensource/commonsys/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="cygnusnext"/>
 
     <!-- Frameworks -->
-        <project path="frameworks/base" name="frameworks_base" remote="cygnus"/>
-        <project path="frameworks/native" name="frameworks_native" remote="cygnus"/>
-        <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="cygnus"/>
-        <project path="frameworks/av" name="frameworks_av" remote="cygnus"/>
-        <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="cygnus"/>
-        <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="cygnus"/>
+        <project path="frameworks/base" name="frameworks_base" remote="cygnusnext"/>
+        <project path="frameworks/native" name="frameworks_native" remote="cygnusnext"/>
+        <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="cygnusnext"/>
+        <project path="frameworks/av" name="frameworks_av" remote="cygnusnext"/>
+        <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="cygnusnext"/>
+        <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native" remote="cygnusnext"/>
 
     <!-- Device -->
-        <project path="device/qcom/common" name="device_qcom_common" remote="cygnus"/>
-        <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="cygnus"/>
-        <project path="device/cygnus/sepolicy" name="device_cygnus_sepolicy" remote="cygnus"/>
+        <project path="device/qcom/common" name="device_qcom_common" remote="cygnusnext"/>
+        <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="cygnusnext"/>
+        <project path="device/cygnus/sepolicy" name="device_cygnus_sepolicy" remote="cygnusnext"/>
         <project path="device/qcom/sepolicy-legacy" name="LineageOS/android_device_qcom_sepolicy" remote="github" revision="lineage-17.1-legacy-um"/>
        
     <!-- External -->
-        <project path="external/selinux" name="external_selinux" remote="cygnus"/>
-        <project path="external/libunwind_llvm" name="external_libunwind_llvm" remote="cygnus"/> 
+        <project path="external/selinux" name="external_selinux" remote="cygnusnext"/>
+        <project path="external/libunwind_llvm" name="external_libunwind_llvm" remote="cygnusnext"/> 
 
     <!-- System -->
-        <project path="system/core" name="system_core" remote="cygnus"/>
-        <project path="system/vold" name="system_vold" remote="cygnus"/>
-        <project path="system/bt" name="system_bt" remote="cygnus"/>
+        <project path="system/core" name="system_core" remote="cygnusnext"/>
+        <project path="system/vold" name="system_vold" remote="cygnusnext"/>
+        <project path="system/bt" name="system_bt" remote="cygnusnext"/>
        
     <!-- Bionic -->
-        <project path="bionic" name="bionic" remote="cygnus"/>
+        <project path="bionic" name="bionic" remote="cygnusnext"/>
    
     <!-- Hardware -->
-        <project path="hardware/libhardware" name="hardware_libhardware" remote="cygnus"/>
-        <project path="hardware/cygnus/interfaces" name="hardware_cygnus_interfaces" remote="cygnus"/>
-        <project path="hardware/interfaces" name="hardware_interfaces" remote="cygnus"/>
-        <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" remote="cygnus"/>
-        <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="cygnus"/>
-        <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="cygnus"/>
-        <project path="hardware/qcom/vr" name="hardware_qcom_vr" remote="cygnus"/>
+        <project path="hardware/libhardware" name="hardware_libhardware" remote="cygnusnext"/>
+        <project path="hardware/cygnus/interfaces" name="hardware_cygnus_interfaces" remote="cygnusnext"/>
+        <project path="hardware/interfaces" name="hardware_interfaces" remote="cygnusnext"/>
+        <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" remote="cygnusnext"/>
+        <project path="hardware/qcom/bt" name="hardware_qcom_bt" remote="cygnusnext"/>
+        <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" remote="cygnusnext"/>
+        <project path="hardware/qcom/vr" name="hardware_qcom_vr" remote="cygnusnext"/>
    
     <!-- Prebuilts -->
-        <project path="prebuilts/r8" name="prebuilts_r8" remote="cygnus"/>
-        <project path="prebuilts/tools-cygnus" name="prebuilts_tools-cygnus" remote="cygnus"/>
-        <project path="prebuilts/abi-dumps/ndk" name="prebuilts_abi-dumps_ndk" remote="cygnus"/>
-        <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" remote="cygnus"/>   
+        <project path="prebuilts/r8" name="prebuilts_r8" remote="cygnusnext"/>
+        <project path="prebuilts/tools-cygnus" name="prebuilts_tools-cygnus" remote="cygnusnext"/>
+        <project path="prebuilts/abi-dumps/ndk" name="prebuilts_abi-dumps_ndk" remote="cygnusnext"/>
+        <project path="prebuilts/abi-dumps/vndk" name="prebuilts_abi-dumps_vndk" remote="cygnusnext"/>   
     
     <!-- Packages -->
-        <project path="packages/services/Telephony" name="packages_services_Telephony" remote="cygnus"/>
-        <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cygnus"/>    
-        <project path="packages/apps/Trebuchet" name="packages_apps_Trebuchet" remote="cygnus"/>
-		<project path="packages/apps/Spaceship" name="packages_apps_Spaceship" remote="cygnus"/>
-		<project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="cygnus"/>
-		<project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="cygnus"/>
+        <project path="packages/services/Telephony" name="packages_services_Telephony" remote="cygnusnext"/>
+        <project path="packages/apps/Settings" name="packages_apps_Settings" remote="cygnusnext"/>    
+        <project path="packages/apps/Trebuchet" name="packages_apps_Trebuchet" remote="cygnusnext"/>
+		<project path="packages/apps/Spaceship" name="packages_apps_Spaceship" remote="cygnusnext"/>
+		<project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="cygnusnext"/>
+		<project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="cygnusnext"/>
 
     <!-- Recovery -->
-        <project path="bootable/recovery" name="bootable_recovery" remote="cygnus"/>
+        <project path="bootable/recovery" name="bootable_recovery" remote="cygnusnext"/>
    
     <!-- SDClang -->
         <project path="vendor/qcom/sdclang-8.0/linux-x86" name="ThankYouMario/proprietary_vendor_qcom_sdclang-8.0_linux-x86" remote="github" revision="quartz" />
