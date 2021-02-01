@@ -22,6 +22,10 @@
            fetch="https://github.com/cygnus-rom"
            revision="caf-11"/>
 
+  <remote  name="cygnus-next"
+           fetch="https://github.com/cygnus-next"
+           revision="staging/caf-11"/>
+
   <remote  name="lineage"
            fetch="https://github.com/LineageOS"
            revision="lineage-18.1"/>
