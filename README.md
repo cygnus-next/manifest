@@ -15,13 +15,13 @@ familiar with [Repo](https://source.android.com/source/using-repo.html) and [Ver
 **INITIALISING THE MANIFEST**
 
 ```
-repo init -u https://github.com/cygnus-rom/manifest.git -b caf-11
+repo init -u https://github.com/cygnus-next/manifest.git -b staging/caf-11
 ```
 
 **SYNCING THE SOURCE**
 
 ```
-repo sync -j$(nproc --all) --force-sync --no-tags --no-clone-bundle --prune --optimized-fetch
+repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 ```
 
 **GAPPS**
