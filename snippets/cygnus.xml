@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="cygnus"
+           fetch="https://github.com/cygnus-next"
+           revision="fourteen" />
+
+  <project path="manifest" name="manifest" remote="cygnus" />
+  <project path="build/make" name="build" remote="cygnus" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="cygnus" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+   <!-- Packages -->
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="cygnus" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="cygnus" />
+
+  <!-- External -->
+  <project path="external/selinux" name="external_selinux" groups="pdk" remote="cygnus" />
+
+  <!-- Hardware -->
+  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="cygnus" />
+  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="cygnus" />
+
+  <!-- vendor repos -->
+  <project path="vendor/cygnus" name="vendor_cygnus" remote="cygnus" />
+
+  <!-- System -->
+  <project path="system/core" name="system_core" remote="cygnus" />
+
+  <!-- recovery -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="cygnus" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="cygnus" />
+  <project path="frameworks/base" name="frameworks_base" remote="cygnus" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="cygnus" />
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="cygnus" />
+
+</manifest>
