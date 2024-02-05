@@ -1273,5 +1273,6 @@
   <!-- CygnusOS Additions -->
   <include name="snippets/remove.xml" />
   <include name="snippets/cygnus.xml" />
+  <include name="snippets/external.xml" />
 
 </manifest>

@@ -33,10 +33,6 @@
   <!-- External -->
   <project path="external/selinux" name="external_selinux" groups="pdk" remote="cygnus" />
 
-  <!-- Hardware -->
-  <project path="hardware/interfaces" name="hardware_interfaces" groups="pdk" remote="cygnus" />
-  <project path="hardware/libhardware" name="hardware_libhardware" groups="pdk" remote="cygnus" />
-
   <!-- vendor repos -->
   <project path="vendor/cygnus" name="vendor_cygnus" remote="cygnus" />
 
